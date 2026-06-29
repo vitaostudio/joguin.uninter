@@ -12,12 +12,12 @@ class Level:
         self.name = name
         self.game_mode = game_mode
         self.entity_list: list[Entity] = []
-        self.entity_list.extend(EntityMaker.get_entity('bg'))
+        self.entity_list.extend(EntityMaker.get_entity('Level1Bg'))
 
     def run(self, ):
         while True:
             for ent in self.entity_list:
-                self.window.blit(source=ent.surf, dest=ent.rect)
+                self.window.blit(source=ent.surface, rect=ent.rect)
                 ent.move()
             pg.display.flip()
-        pass
+            pass

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+from code.const import WIN_WIDTH
 from code.entity1 import Entity1
 
 class Background(Entity1):
@@ -9,4 +9,5 @@ class Background(Entity1):
 
     def move(self, ):
         self.rect.centerx -= 1
-        pass
+        if self.rect.right <= 0:
+            self.rect.left = WIN_WIDTH
