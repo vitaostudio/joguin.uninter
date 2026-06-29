@@ -16,9 +16,3 @@ class Game:
             menu = Menu(self.window)
             menu.run()
             pass
-
-            # # check event queue
-            # for event in pg.event.get():
-            #     if event.type == pg.QUIT:
-            #         pg.quit()  # close
-            #         quit()  # end
