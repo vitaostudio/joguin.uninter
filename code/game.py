@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import pygame as pg
 
-from code import menu
 from code.menu import Menu
 
 
